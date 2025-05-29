@@ -1,0 +1,474 @@
+:root{
+    --yellow:#f9ca24;
+
+}
+*{
+    font-family: 'Libre Franklin', sans-serif;;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+*::selection{
+    background: var(--yellow);
+    color: #333;
+}
+
+html{
+    font-size: 62.5;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+}
+.fa-times{
+    width: 400px !important;
+}
+body{
+    height: 4000px;
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 18rem;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+}
+.btn{
+    padding: 0.5rem 2.5rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+  border-radius: 5rem;
+}
+.btn i{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.btn:hover{
+    background: var(--yellow);
+}
+.heading{
+    text-align: center;
+    margin: 0 3rem;
+    font-size: 3rem;
+    padding: 0.5rem;
+    border-bottom: 0.2rem solid #fff4;
+    color: #fff;
+}
+.heading span{
+    color: var(--yellow);
+}
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    height: 100%;
+    width: 20rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.user img{
+height: 10rem;
+width: 10rem;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 1rem;
+border: 8px solid var(--yellow);
+}
+.user .name{
+    font-size: 2rem;
+    color: #fff;
+}
+.user .name:hover{
+  color: var(--yellow);
+}
+.user .post{
+    font-size: 1rem;
+    color: #eee;   
+}
+.user .post:hover{
+  color: var(--yellow);
+}
+header .navbar{
+    width: 100%;
+}
+.navbar ul{
+  list-style: none;
+    padding: 1rem 3rem;
+}
+.navbar li a{
+   display: block;
+   padding: 9px;
+   width: 15rem;
+   margin: 8px 0;
+   background: #333;
+   color: #fff;
+   font-size: 1rem;
+   border-radius:5rem ;
+  }
+  .navbar li a:hover{
+    background: var(--yellow);
+  }
+  .navbar li i{
+    margin-left: 7px;
+    font-size: 12px;
+    color: #fff;
+    /* color: var(--yellow); */
+  }
+#menu{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+   flex-flow: column;
+   margin-left: 20px;
+   padding: 0 12rem;
+}
+.home h3{
+  font-size: 1.5rem;
+  color: #fff;
+}
+.home h1{
+    font-size: 2.5rem;
+    color: #fff;
+}
+h1 span{
+    color: var(--yellow);
+}
+.home p{
+    font-size: 1rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+.home .social-icons{
+    position: absolute;
+    left: 36%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.home .social-icons span{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    /* color: #333; */
+    color: #eee;
+}
+.home .social-icons span:hover{
+  color: var(--yellow);
+  transition: ease-in;
+}
+.home .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.about .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.row .info h3{
+    font-size: 1rem;
+    color: var(--yellow);
+    padding: 0.5rem 0;
+    font-weight: normal;
+}
+.row .info h3 span{
+    color: #eee;
+    padding: 0 0.3rem;
+}
+.row .info{
+    flex: 1  18rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+.row .info .btn .dwnld{
+    height: 15px;
+    width: 25px;
+}
+.row .counter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 28rem;
+}
+.row .counter .box{
+    width: 12rem;
+    height: 7rem;
+    background: #222;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+.counter .box span{
+  font-size: 2.5rem;
+  color: var(--yellow);
+}
+.counter .box h3{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.services .box-cantanier{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 5rem;
+}
+.services .box-cantanier .box{
+    width: 19rem;
+    margin:  2rem 3rem;
+    border-left: 4px solid #fff;
+    padding-left: 2rem;
+    position: relative;
+
+  }
+  .services .box-cantanier .box span{
+    position: absolute;
+    left: 2.5rem;
+    font-size: 0.9rem;
+    background: #222;
+    color: #fff;
+    border-radius: 3rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .services .box-cantanier .box h3{
+      font-size: 1.2rem;
+      color: #fff;
+      padding-top: 1.5rem;
+  }
+  .services .box-cantanier .box p{
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 0.5rem 0;
+  }
+  .services .box-cantanier i{
+    position: relative;
+    bottom: 1rem;
+    right: 3.5rem;
+    height: 3rem; width: 3rem;
+    border-radius: 50%;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    background: var(--yellow);
+  }
+  .contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contact .row .content{
+    flex-direction: column;
+    flex: 1 1 13rem;
+    padding: 3rem;
+    padding-bottom: 1rem;
+  }
+  .contact .row .content .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 0.6rem;
+  }
+  .contact .row .content .info{
+    padding: 0.9rem 0.5rem;
+  }
+  .contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+    color: #eee;
+    font-weight: normal;
+  }
+  .contact .row .content .info h3 i{
+    padding-right: 0.5rem;
+    color: var(--yellow);
+
+  }
+  .contact .row .form{
+    flex: 1 1 22rem;
+    padding: 2rem;
+     margin: 1rem;
+     margin-bottom: 4rem;
+  }
+  .contact .row .form .box{
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1rem;
+    width:100%;
+  }
+  .contact .row .form .box::placeholder{
+    text-transform: capitalize;
+  }
+  .contact .row form .box-message{
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    width:100%;
+    height: 10rem;
+    resize: none;
+  }
+  .portfolio .boc-contanier{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 1.5rem;
+    padding: 2rem 0;
+  }
+  .portfolio .boc-contanier .box{
+     height: 12rem;
+      width: 17rem;
+    border-radius: 1rem;
+    border: 2px solid var(--yellow);
+    margin-top: 2rem;
+    overflow: hidden;
+  }
+  .portfolio .boc-contanier .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .portfolio .boc-contanier .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .portfolio .boc-contanier .box span{
+    font-size: 2.5rem;
+  color: var(--yellow);
+  }
+  .portfolio .boc-contanier .box:hover img{
+    transform: scale(1.2) ;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media qiuries */
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .home{
+        padding: 0.5rem 2rem;
+    }
+}
+@media(max-width:991px){
+    header{
+        left: 120%;}
+    #menu{
+    display: block;
+}
+    header .toggle{
+    left:0%; 
+}
+    body{
+    padding: 0px;
+}
+.home .social-icons {
+  font-size: 0.8rem;
+  position: absolute;
+  left: 30%;
+  top: 37%;
+  display: flex;
+  flex-direction: column;
+}
+}
+@media(max-width:768px){
+    html{
+    font-size: 60%;
+}
+#menu{
+    display: block;
+}
+.home .social-icons {
+  font-size: 0.8rem;
+  position: absolute;
+  left: 3%;
+  top: 37%;
+  display: flex;
+  flex-direction: column;
+}
+}
+@media(max-width:400px){
+    header{
+    width: 100vw;
+}
+#menu{
+    display: block;
+}
+html{
+    font-size: 85%;
+}
+.home .social-icons span{
+  font-size: 0.5rem;
+}
+.heading{
+   margin: 0 1.5rem;
+}
+.about .row .counter .box{
+    width: 100%;
+}
+#home{
+    flex-direction: column;
+}
+.services .box-container .box{
+    width: 100%;
+}
+.contact .row .form{
+    margin: 3rem 0;
+}
+}
